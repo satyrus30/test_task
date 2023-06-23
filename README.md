@@ -35,3 +35,10 @@ Allure:
 - раскрыть dropdown директория allure-report
 - dbl click index.html
 - выбрать браузер (chrome)
+
+## Локальный запуск тестов
+маркер -> @pytest.mark.authorization_negative -> authorization_negative
+
+флаг для визуального отображения работы теста в браузере ```--showbrowser``` 
+
+    pytest -m <маркер> 
