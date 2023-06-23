@@ -1,0 +1,21 @@
+Title "Выход из системы"
+mark "logout"
+
+параметризация парами
+логин / пароль
+('standard_user', 'secret_sauce')
+
+Шаги
+1 открыть страницу url - "https://www.saucedemo.com/"
+2 ввести логин в поле Username
+3 ввести пароль в поле Password
+4 нажать кнопку Login
+5 нажать на кнопку - Open_burger_menu
+6 нажать на кнопку - Logout
+
+ОР
+- загрузка страницы url - "https://www.saucedemo.com/"
+- сравнить ожидаемый и фактическй url
+
+ФР
+совпал с ОР

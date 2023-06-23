@@ -1,0 +1,19 @@
+Title "Авторизация (позитивный)"
+mark "authorization_positive"
+
+параметризация парами
+логин / пароль
+('standard_user', 'secret_sauce'),
+
+Шаги
+1 открыть страницу url - "https://www.saucedemo.com/"
+2 ввести логин в поле Username
+3 ввести пароль в поле Password
+4 нажать кнопку Login
+
+ОР
+- загрузка страницы url - "https://www.saucedemo.com/inventory.html"
+- сравнить ожидаемый и фактическй url
+
+ФР
+совпал с ОР

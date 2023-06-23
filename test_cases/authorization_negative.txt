@@ -1,0 +1,20 @@
+Title "Авторизация (негативный)"
+mark "authorization_negative"
+
+параметризация парами
+логин / пароль
+('qwerty', 'secret_sauce'),
+('qwerty', 'qwerty'),
+('standard_user', 'qwerty')
+
+Шаги
+1 открыть страницу url - "https://www.saucedemo.com/"
+2 ввести логин в поле Username
+3 ввести пароль в поле Password
+4 нажать кнопку Login
+
+ОР
+- найти сообщение о ошибке - "Epic sadface: Username and password do not match any user in this service"
+
+ФР
+совпал с ОР
