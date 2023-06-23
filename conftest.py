@@ -5,7 +5,6 @@ import pytest
 
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium import webdriver
-# from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 
 PATH_TO_DRIVER = ChromeDriverManager().install()
@@ -17,6 +16,8 @@ def pytest_addoption(parser):
     @param parser: to add command line options.
     """
     parser.addoption("--url", "-U", default="https://www.saucedemo.com/", help='input ip address')
+    parser.addoption("--login", action="store", default="standard_user", help="login")
+    parser.addoption("--password", action="store", default="secret_sauce", help="password")
     parser.addoption("--showbrowser", action="store_true", help="show browser")
 
 
@@ -27,8 +28,10 @@ def params(request) -> dict:
     :return: dictionary with data
     """
     params = {
-              'url': request.config.getoption('--url'),
-              'showbrowser': request.config.getoption('--showbrowser')
+        'url': request.config.getoption('--url'),
+        'login': request.config.getoption('--login'),
+        'password': request.config.getoption('--password'),
+        'showbrowser': request.config.getoption('--showbrowser')
     }
 
     return params
